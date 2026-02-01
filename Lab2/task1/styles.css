@@ -1,0 +1,117 @@
+
+
+h1 {
+  color: #0866ff;
+  font-size: 40pt;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+
+form {
+  background-color: white;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: #f2f4f7;
+  font-family: sans-serif;
+}
+
+#emailphone, #password {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 12pt;
+  padding-left: 15px;
+}
+
+#enter {
+  background-color: #0866ff;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+#new {
+  background-color: #42b72a;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 60%;
+  font-size: 12pt;
+  margin: 10px auto;
+  margin-left: 15px;
+}
+
+hr {
+  margin-left: 20px;
+  color: lightgray;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+
+button {
+  text-align: center;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#createfamous, #forgot {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#forgot {
+  color: #0866ff;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+#createfamous:hover, #forgot:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 980px;
+  margin: 0 auto;
+  gap: 80px;
+}
+
+
+#fbleft {
+  flex: 1;
+  padding-right: 40px;
+  max-width: 500px;
+}
+#fbright {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+form {
+  width: 85%;
+}
+
+#famous, #forgot {
+  font-size: 11pt;
+}

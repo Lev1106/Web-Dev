@@ -1,0 +1,258 @@
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  line-height: 68px;
+  letter-spacing: -0.03em;
+  box-sizing: border-box;
+}
+
+img {
+  padding-left: 20px;
+}
+
+#main {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 110px;
+}
+#wegetit {
+  text-align: center;
+  color: gray;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+  font-size: 12pt;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-weight: bolder;
+}
+.whitebutton {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  width: 100%;
+}
+.blackbutton {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+
+#pricing {
+  max-width: 1230px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 29px;
+  align-items: stretch;
+}
+
+#trial {
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+}
+
+.card {
+  flex: 1;
+  padding: 25px;
+  padding-top: 5px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 30px 60px rgba(0, 0, 0, 0.08);
+}
+h3 {
+  font-size: 24px;
+  margin-bottom: -8px;
+}
+.recommended {
+  border: 6px solid #0e73e8;
+  border-top: 35px solid #0e73e8;
+  margin-top: -35px;
+}
+#recommendedtext {
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  top: -64px;
+  font-size: 15px;
+  color: white;
+  margin-bottom: -50px;
+}
+.description {
+  color: gray;
+  font-size: 15px;
+}
+.price {
+  color: gray;
+  vertical-align: center;
+}
+.pricecurrency {
+  font-size: 24px;
+  color: black;
+}
+.pricenumber {
+  font-size: 48px;
+  color: black;
+}
+#twobuttons {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+sup {
+  position: relative;
+  top: -15px;
+  left: -3px;
+  font-size: 20px;
+}
+details {
+  text-align: left;
+  padding: 10px;
+}
+
+.summarydescription {
+  color: #666;
+  font-size: 85%;
+}
+.featured {
+  color: #0e73e8;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.startingat {
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 30%;
+  padding-top: 5px;
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+  margin-bottom: -25px;
+}
+.startingat-empty {
+  height: 5px;
+}
+#addons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 40px 20px;
+}
+.addon {
+  border: 1px solid gray;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.06), 0 8px 8px rgba(0, 0, 0, 0.08);
+}
+
+.widthhalf {
+  width: 40%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#searchorjump, #head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#dashboard {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 25px;
+  margin-top: 10px;
+  font-weight: normal;
+  border: 1px solid #dfe4e9;
+  border-radius: 5px;
+}
+input {
+  padding: 0px;
+  height: 28px;
+  width: 310px;
+  margin-top: -5px;
+  border: 1px solid #dfe4e9;
+  border-radius: 5px;
+}
+details {
+  color: #5e636e;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+details span, details p {
+  font-weight: normal;
+  padding-left: 12px;
+}
+.headerlink {
+  color: black;
+  text-decoration: none;
+}
+.everythingin {
+  text-align: left;
+}
+.addon {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 7px;
+  border: 1px solid #dfe4e9;
+}
+.addon:hover {
+  transform: scale(1.02);
+}
+#comparefeatures {
+  margin-top: 80px;
+  text-align: center;
+  color: #0e73e8;
+  font-size: 25px;
+}
+#comparefeatures a {
+  text-decoration: none;
+}
+#comparefeatures a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.icon {
+  margin-top: 25px;
+  padding-left: 0px;
+  margin-bottom: -15px;
+}
+h4 {
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  #addons, #pricing {
+    grid-template-columns: 1fr;
+  }
+}

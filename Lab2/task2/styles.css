@@ -1,0 +1,138 @@
+body {
+  background-color: white;
+  font-family: Helvetica;
+}
+main {
+  display: flex;
+}
+#left {
+  flex: 2;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+#right {
+  flex: 1;
+  border-left: 2px solid #dde2e8;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#center {
+  max-width: 50%;
+}
+footer {
+  border-top: 1px solid #dde2e8;
+  padding-top: 10px;
+  align-items: center;
+  flex-direction: column;
+  white-space: nowrap;
+  font-family: Helvetica;
+}
+#footer1, #footer2 {
+  color: gray;
+  display: flex;
+  gap: 18px;
+  font-size: 12px;
+  justify-content: center;
+  margin: 10px;
+}
+#footer2 {
+  margin-top: 15px;
+}
+#imgbelow {
+  height: calc(100vh - 370px);
+  width: calc(100vw - 780px);
+  object-fit: contain;
+}
+h1 {
+  margin-top: 72px;
+  margin-left: 15px;
+  font-weight: normal;
+  font-size: 2.8vw;
+  text-align: center;
+  font-family: serif;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  top: 29px;
+  left: 29px;
+  position: absolute;
+  padding: 0;
+}
+#right {
+  display: flex;
+}
+#imgbelow {
+  margin-top: -47px;
+}
+#enterlabel {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#enter {
+  background-color: #99c1f3;
+  border: none;
+  color: white;
+  width: 100%;
+  margin-top: 15px;
+}
+
+form, button {
+  width: 100%;
+}
+input {
+  width: 94%;
+}
+#forgot {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: white;
+}
+button {
+  border-radius: 35px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#facebook {
+  border: 1px solid #ccd3db;
+  background-color: white;
+}
+#new {
+  border: 1px solid #0064e0;
+  color: #0064e0;
+  background-color: white;
+}
+.empty {
+  height: 40px;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccd3db;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#meta {
+  width: 70px;
+  text-align: center;
+  vertical-align: top;
+  align-self: center;
+  margin-top: 15px;
+}

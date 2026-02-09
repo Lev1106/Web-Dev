@@ -62,6 +62,8 @@ li {
   display: flex;
   align-items: center;
   gap: 20px;
+  overflow: scroll;
+  word-break: break-word;
 }
 li input[type="checkbox"]{
   margin-right: 50px;

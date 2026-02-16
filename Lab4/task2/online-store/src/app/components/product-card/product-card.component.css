@@ -1,7 +1,7 @@
 .card {
   border: 1px solid #e5e5e5;
   width: 240px;
-  min-height: 470px;
+  min-height: 500px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,11 @@
   margin-top: auto;
 }
 .productimage {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+.carouselimage {
   height: 200px;
   width: 100%;
   object-fit: contain;
@@ -42,4 +47,16 @@ a:hover {
 details p{
   max-height: 200px;
   overflow: auto;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.buttons button {
+  flex: 1;
+}
+.thumbnails {
+  position: relative;
+  display: flex; gap: 5px; margin-top: 5px; overflow-x: auto;"
 }

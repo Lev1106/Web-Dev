@@ -1,9 +1,15 @@
 <div class="card">
-  <a [href]="product.link" target="_blank">
-    <img class="productimage" [src]="product.image" alt="{{product.name}}">
-    <h2>{{ product.name }}</h2>
-  </a>
+  <div class="carousel">
+    <a [href]="product.link" target="_blank">
+      <img class="productimage" [src]="currentImage" alt="{{product.name}}">
+    </a>
+    <div class="buttons">
+      <button class="prevbutton" (click)="prev()"><</button>
+      <button class="nextbutton" (click)="next()">></button>
+    </div>
+  </div>
   <div class="description">
+    <h2>{{ product.name }}  </h2>
     <p>⭐ {{ product.rating }}</p>
     <p>Цена: {{ product.price.toLocaleString('ru-RU') }} ₸</p>
     <details>

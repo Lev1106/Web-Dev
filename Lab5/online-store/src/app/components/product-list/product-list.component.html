@@ -1,0 +1,6 @@
+@if (products.length === 0) {
+  <p>Нет продуктов в этой категории</p>
+}
+<div class="products-list" >
+  <product-card *ngFor="let pr of products" [product]="pr" (delete)="onDelete($event)"></product-card>
+</div>

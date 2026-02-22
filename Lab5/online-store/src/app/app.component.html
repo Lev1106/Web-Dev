@@ -1,0 +1,13 @@
+<div class="categories">
+  <button *ngFor="let c of categories" (click)="selectCategory(c.id)" [class.selected]="c.id === categoryId">
+    <span class="categoryname">{{c.name}}</span>
+    <br />
+    <span class="categorydesc">{{c.description}}</span>
+  </button>
+</div>
+@if (categoryId === null) {
+  <p>Выберите категорию, чтобы посмотреть товары</p>
+}
+@else {
+  <product-list [products]="products" (deleteProduct)="onDeleteProduct($event)"></product-list>
+}

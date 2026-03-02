@@ -1,0 +1,25 @@
+<h2>Album Detail</h2>
+
+@if (loading) {
+  <p>Loading...</p>
+} @else {
+  @if (!album) {
+    <p>Not found</p>
+  } @else {
+    <p><b>ID:</b> {{ album.id }}</p>
+    <p><b>User ID:</b> {{ album.userId }}</p>
+
+    <label>
+      <b>Title:</b>
+      <input [(ngModel)]="newTitle" />
+    </label>
+
+    <div style="margin-top: 12px;">
+      <button (click)="save()">Save</button>
+
+      <a [routerLink]="['/albums', album.id, 'photos']">View Photos</a>
+
+      <button (click)="back()">Back</button>
+    </div>
+  }
+}

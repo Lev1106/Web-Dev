@@ -1,0 +1,22 @@
+<h2>Album Photos</h2>
+
+@if (photos$ | async; as photos) {
+  @if (photos.length === 0) {
+    <p>No photos.</p>
+  } @else {
+    <div class="grid">
+      @for (p of photos; track p.id) {
+        <div class="card" title="{{ p.title }}">
+          <img [src]="p.thumbnail" [alt]="p.title" />
+          <div class="title">{{ p.title }}</div>
+        </div>
+      }
+    </div>
+  }
+
+  @if (albumId$ | async; as id) {
+    <button (click)="back(id)">Back</button>
+  }
+} @else {
+  <p>Loading...</p>
+}

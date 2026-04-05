@@ -4,8 +4,8 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from api.models import Product, Category
-from api.serializers import ProductSerializer, CategorySerializer
+from models import Product, Category
+from serializers import ProductSerializer, CategorySerializer
 
 
 # Create your views here.

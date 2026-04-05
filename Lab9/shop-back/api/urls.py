@@ -1,6 +1,6 @@
 from rest_framework.routers import DefaultRouter
 
-from api.views import ProductViewSet, CategoryViewSet
+from views import ProductViewSet, CategoryViewSet
 from django.urls import path, include
 router = DefaultRouter()
 router.register('products', ProductViewSet)
